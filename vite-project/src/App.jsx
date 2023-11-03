@@ -1,7 +1,10 @@
 import './style.css'
-import TestImage from "../Images/test image.png"
+import TestImage from "../Images/test image3.png"
 import { useEffect } from 'react'
 import { useRef } from 'react'
+
+import AboutMeSection from './components/aboutmeSection';
+import ProjectSection from './components/ProjectSection';
 
 export default function App() {
 
@@ -61,9 +64,9 @@ export default function App() {
       <div className="downPage-section">
         
 
-        <div className="about-me-section">
-          This is about me 
-        </div>
+        <AboutMeSection/>
+
+        <ProjectSection/>
       </div>
     </div>
   )

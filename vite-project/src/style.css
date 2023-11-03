@@ -76,7 +76,7 @@ body{
 
 .downPage-section{
     margin-top: 200vh;
-    background-color: black;
+    background-color: #14181b;
     z-index: 1;
     position: absolute;
     color: white;
@@ -84,7 +84,66 @@ body{
     height: 500vh;
 }
 
-.about-me-section{
-    color: white;
+.aboutme-section{
     margin-top: 20vh;
+}
+
+
+
+/* Project Section */
+.projectSection-content-div{
+    margin: 4vh 15vw;
+}
+.projectSection-upper-content-div{
+    display: flex;
+    /* gap: 7vw; */
+}
+
+.echo-hub-content-div{
+    overflow: hidden;
+    height: 120vh;
+    width: 40vw;
+    border-radius: 8vh;
+}
+
+.echo-hub-content-div img{
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 8vh;
+}
+
+.typespeed-content-div{
+
+    box-sizing: border-box;
+    margin-top: 40vh;
+    overflow: hidden;
+    height: 80vh ;
+    width: 30vw;
+    border-radius: 8vh;
+}
+
+.typespeed-content-div img{
+    object-fit: cover;
+    width: 30vw;
+    border-radius: 8vh;
+    transition: all 0.1s ease-out;
+}
+
+.projectSection-lower-content-div{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.e-commerce-content-div{
+    overflow: hidden;
+    border-radius: 8vh;
+    height: 70vh;
+    width: 50vw;
+    object-fit: cover;
+}
+
+.e-commerce-content-div img{
+    width: 50vw;
+    border-radius: 8vh;
 }
