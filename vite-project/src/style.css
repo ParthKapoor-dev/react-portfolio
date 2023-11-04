@@ -76,12 +76,14 @@ body{
 
 .downPage-section{
     margin-top: 200vh;
+    /* background-color: '#14181b'; */
     background-color: #14181b;
     z-index: 1;
     position: absolute;
     color: white;
     width: 100%;
     height: 500vh;
+    transition: all 0.4s ease-out;
 }
 
 .aboutme-section{
@@ -92,11 +94,11 @@ body{
 
 /* Project Section */
 .projectSection-content-div{
-    margin: 4vh 15vw;
+    margin: 4vh 12vw;
 }
 .projectSection-upper-content-div{
     display: flex;
-    /* gap: 7vw; */
+    gap: 3vw;
 }
 
 .echo-hub-content-div{
@@ -104,12 +106,15 @@ body{
     height: 120vh;
     width: 40vw;
     border-radius: 8vh;
+    transition: filter 0.4s ease-out;
 }
-
 .echo-hub-content-div img{
     width: 40vw;
     object-fit: cover;
     border-radius: 8vh;
+}
+.echo-hub-content-div:hover{
+    filter: grayscale(1);
 }
 
 .typespeed-content-div{
@@ -120,14 +125,18 @@ body{
     height: 80vh ;
     width: 30vw;
     border-radius: 8vh;
+    transition: filter 0.2s ease-out;
 }
-
 .typespeed-content-div img{
     object-fit: cover;
     width: 30vw;
     border-radius: 8vh;
     transition: all 0.1s ease-out;
 }
+.typespeed-content-div:hover{
+    filter: grayscale(1);
+}
+
 
 .projectSection-lower-content-div{
     margin-top: 20vh;
@@ -141,9 +150,12 @@ body{
     height: 70vh;
     width: 50vw;
     object-fit: cover;
+    transition: filter 0.4s ease-out;
 }
-
 .e-commerce-content-div img{
     width: 50vw;
     border-radius: 8vh;
+}
+.e-commerce-content-div:hover{
+    filter: grayscale(1);
 }
