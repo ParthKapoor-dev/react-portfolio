@@ -159,3 +159,31 @@ body{
 .e-commerce-content-div:hover{
     filter: grayscale(1);
 }
+
+
+
+
+/* Cursor div */
+
+.cursor-div{
+    color : red;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s ease-out;
+}
+
+.cursor-echohub-div,
+.cursor-typespeed-div,
+.cursor-ecom-div{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+
+.cursor-echohub-div img,
+.cursor-typespeed-div img,
+.cursor-ecom-div img{
+    height: 30vh;
+    border-radius: 2vh;
+    /* border: 0.5px solid rgb(201, 198, 198); */
+}

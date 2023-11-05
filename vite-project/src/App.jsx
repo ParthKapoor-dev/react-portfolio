@@ -17,9 +17,8 @@ export default function App() {
 
     function onScroll() {
       const scrollValue = (window.scrollY / htmlDocument.clientHeight);
-      if(scrollValue <= 1.4)
-      ImageRef.current.style.transform = `translate(-50%,${scrollValue*4}%) scale(${scrollValue*3 + 1})`;
-      console.log(scrollValue)
+      if (scrollValue <= 1.4)
+        ImageRef.current.style.transform = `translate(-50%,${scrollValue * 4}%) scale(${scrollValue * 3 + 1})`;
     }
     window.addEventListener('scroll', onScroll);
     return () => {
@@ -31,11 +30,10 @@ export default function App() {
   return (
     <div className="mainPage-div">
 
-     <FixedContainers/>
-
+      <FixedContainers />
 
       <div className="mainPage-photo-div">
-        <img src={TestImage} ref={ImageRef}/>
+        <img src={TestImage} ref={ImageRef} />
 
         <p className="heading">
           MERN <br /> WebDev
@@ -43,11 +41,11 @@ export default function App() {
       </div>
 
       <div className="downPage-section">
-        
 
-        <AboutMeSection/>
 
-        <ProjectSection/>
+        <AboutMeSection />
+
+        <ProjectSection />
       </div>
     </div>
   )
